@@ -1,6 +1,7 @@
 import Server from './class/server';
 import userRoute from './routes/usuarios';
 import TestMySqlDb from './class/dbMysql';
+import TestMongoDb from './class/dbMongoDb';
 
 //Instanciamos el server
 const server = new Server();
@@ -11,8 +12,12 @@ server.start(() => {
 //Rutas de la app
 server.app.use('/users',userRoute);
 
-//Conexion
-const BaseTest = new TestMySqlDb();
-BaseTest.Conectar();
+//Conexion MySql
+const BaseTestMySql = new TestMySqlDb();
+BaseTestMySql.Conectar();
+
+//Conexion MongoDb
+const BaseTestMongodb = new TestMongoDb();
+BaseTestMongodb.Conectar();
 
 
