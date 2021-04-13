@@ -12,5 +12,8 @@ export default class Server {
  start(callback:any){
      this.app.listen(this.port, this.host, callback);
  }
+<<<<<<< HEAD
 
+=======
+>>>>>>> dev
 }
