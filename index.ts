@@ -17,7 +17,7 @@ const BaseTestMySql = new TestMySqlDb();
 BaseTestMySql.Conectar();
 
 //Conexion MongoDb
-const BaseTestMongodb = new TestMongoDb();
+const BaseTestMongodb = new TestMongoDb(); 
 BaseTestMongodb.Conectar();
 
 
